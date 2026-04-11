@@ -38,6 +38,8 @@ h1, h2, h3, h4 { font-family: var(--font-heading); text-transform: uppercase; li
 
 /* Brutalist UI Components */
 .brutal-card {
+    position: relative;
+    overflow: hidden;
     background: #FFFFFF;
     border: 3px solid var(--border-color);
     box-shadow: var(--brutal-shadow);
@@ -56,6 +58,8 @@ h1, h2, h3, h4 { font-family: var(--font-heading); text-transform: uppercase; li
     display: inline-flex;
 }
 .brutal-scale-card {
+    position: relative;
+    overflow: hidden;
     background: #FFFFFF;
     border: 3px solid var(--border-color);
     box-shadow: var(--brutal-shadow);
@@ -68,6 +72,8 @@ h1, h2, h3, h4 { font-family: var(--font-heading); text-transform: uppercase; li
 }
 
 .brutal-btn {
+    position: relative;
+    overflow: hidden;
     display: inline-block;
     padding: 16px 32px;
     font-family: var(--font-heading);
@@ -84,6 +90,37 @@ h1, h2, h3, h4 { font-family: var(--font-heading); text-transform: uppercase; li
 .primary-btn { background-color: var(--primary); color: var(--text-main); }
 .secondary-btn { background-color: #FFFFFF; color: var(--text-main); }
 .small-btn { padding: 10px 16px; font-size: 0.7rem; background-color: var(--tertiary); }
+
+/* Signature motif: dual-corner pixel accent */
+.brutal-card::before,
+.brutal-scale-card::before,
+.brutal-btn::before,
+.section-title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background:
+        linear-gradient(90deg, var(--secondary) 0 4px, transparent 4px 100%),
+        linear-gradient(180deg, var(--secondary) 0 4px, transparent 4px 100%);
+}
+
+.brutal-card::after,
+.brutal-scale-card::after,
+.brutal-btn::after,
+.section-title::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 24px;
+    height: 24px;
+    background:
+        linear-gradient(270deg, var(--accent-green) 0 4px, transparent 4px 100%),
+        linear-gradient(0deg, var(--accent-green) 0 4px, transparent 4px 100%);
+}
 
 .brutal-tag {
     font-family: var(--font-body);
@@ -118,7 +155,7 @@ h1, h2, h3, h4 { font-family: var(--font-heading); text-transform: uppercase; li
 /* Layout Utilities */
 .main-wrapper { position: relative; z-index: 1; }
 .section-padding { padding: 100px 10%; }
-.section-title { font-size: 2rem; color: var(--accent-green); margin-bottom: 3.5rem; border-bottom: 4px solid var(--border-color); padding-bottom: 1rem; display: inline-block; }
+.section-title { position: relative; font-size: 2rem; color: var(--accent-green); margin-bottom: 3.5rem; border-bottom: 4px solid var(--border-color); padding: 0 1.1rem 1rem 1.1rem; display: inline-block; }
 .container { max-width: 1200px; margin: 0 auto; }
 
 /* Navbar */
