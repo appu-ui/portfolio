@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,20 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <nav class="navbar">
         <a href="#home" class="logo">APPU</a>
         <ul class="nav-links">
             <li><a href="#home">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#about">EDUCATION</a></li>
             <li><a href="#experience">EXPERIENCE</a></li>
             <li><a href="#projects">PROJECTS</a></li>
             <li><a href="#skills">SKILLS</a></li>
@@ -28,20 +32,42 @@
 
     <div class="main-wrapper">
         <section id="home" class="hero section-padding">
+
+
             <div class="hero-content">
-                <div class="brutal-badge">SYSTEM ONLINE</div>
-                <h1 class="title">HELLO, I AM <br><span class="highlight">APPU B APPANNAGOL</span></h1>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <div class="brutal-badge">SYSTEM ONLINE</div>
+                    <div class="brutal-badge" style="background: #FFF; color: var(--text-main);"><i
+                            class="fas fa-map-marker-alt"></i> BENGALURU, IN</div>
+                </div>
+                <h1 class="title">NAMASKARA, I AM <br><span class="highlight">APPU B APPANNAGOL</span></h1>
                 <h2 class="typing-text">> <span id="typewriter"></span><span class="cursor">_</span></h2>
-                <p class="description">Computer Science Engineering student at M S Ramaiah Institute of Technology. Passionate about AI integrations, Full-Stack frameworks, and architecting the future.</p>
+                <p class="description">Computer Science Engineering student at M S Ramaiah Institute of Technology.
+                    Passionate about AI integrations, Full-Stack frameworks, and architecting the future.</p>
                 <div class="cta-group">
-                    <a href="#projects" class="brutal-btn primary-btn">VIEW_WORK</a>
-                    <a href="resume.pdf" download class="brutal-btn secondary-btn"><i class="fas fa-download"></i> RESUME</a>
+                    <a href="assets/Jake_s_Resume_6.pdf" download="Jake_s_Resume.pdf"
+                        class="brutal-btn primary-btn">RESUME</a>
+                    <a href="#projects" class="brutal-btn secondary-btn">VIEW_WORK</a>
                     <a href="#contact" class="brutal-btn secondary-btn">CONTACT</a>
                 </div>
-                <div class="social-links brutal-card-small">
-                    <a href="https://linkedin.com/in/appu-ui" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/appu-ui" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="mailto:1MS22CI014@msrit.edu"><i class="fas fa-envelope"></i></a>
+                <!-- Social Sidebar -->
+                <div class="social-links reveal">
+                    <a href="https://linkedin.com/in/appu-ui" target="_blank" class="social-btn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/appu-ui" target="_blank" class="social-btn"><i
+                            class="fab fa-github"></i></a>
+                    <a href="mailto:1MS22CI014@msrit.edu" class="social-btn"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <!-- Empty Art Canvas Right Side -->
+            <div class="hero-graphic reveal">
+                <div class="hero-composition">
+                    <div class="comp-box comp-1"></div>
+                    <div class="comp-box comp-2"></div>
+                    <div class="comp-box comp-3">
+                        <i class="fas fa-code" style="font-size: 4rem; color: var(--text-main);"></i>
+                    </div>
                 </div>
             </div>
         </section>
@@ -73,7 +99,7 @@
         <section id="experience" class="experience section-padding">
             <div class="container">
                 <h2 class="section-title">EXPERIENCE</h2>
-                
+
                 <div class="experience-card brutal-card reveal" style="margin-bottom: 3rem;">
                     <div class="exp-header">
                         <h3>Associate Software Engineer Intern</h3>
@@ -112,8 +138,10 @@
                         <div class="project-content">
                             <h3>LegalMind Assistant</h3>
                             <p class="project-tech">Python | CrewAI | LangChain</p>
-                            <p class="project-desc">AI-powered legal assistant classifying legal issues and identifying IPC sections using Groq LLaMA 3 70B.</p>
-                            <a href="https://github.com/appu-ui" target="_blank" class="project-link brutal-btn small-btn"><i class="fas fa-terminal"></i> CODE</a>
+                            <p class="project-desc">AI-powered legal assistant classifying legal issues and identifying
+                                IPC sections using Groq LLaMA 3 70B.</p>
+                            <a href="https://github.com/appu-ui" target="_blank"
+                                class="project-link brutal-btn small-btn"><i class="fas fa-terminal"></i> CODE</a>
                         </div>
                     </div>
                     <!-- EcoSnap -->
@@ -121,8 +149,10 @@
                         <div class="project-content">
                             <h3>EcoSnap Waste Mgmt</h3>
                             <p class="project-tech">Next.js | Web3Auth | Gemini</p>
-                            <p class="project-desc">Full-stack platform with Google Gemini AI for waste verification and secure wallet authentication.</p>
-                            <a href="https://github.com/appu-ui" target="_blank" class="project-link brutal-btn small-btn"><i class="fas fa-terminal"></i> CODE</a>
+                            <p class="project-desc">Full-stack platform with Google Gemini AI for waste verification and
+                                secure wallet authentication.</p>
+                            <a href="https://github.com/appu-ui" target="_blank"
+                                class="project-link brutal-btn small-btn"><i class="fas fa-terminal"></i> CODE</a>
                         </div>
                     </div>
                     <!-- Fetal Brain -->
@@ -130,8 +160,10 @@
                         <div class="project-content">
                             <h3>Fetal Brain Anomaly</h3>
                             <p class="project-tech">Python | TensorFlow | Flask</p>
-                            <p class="project-desc">CNN and Xception deep learning models to classify anomalies from ultrasound images.</p>
-                            <a href="https://github.com/appu-ui" target="_blank" class="project-link brutal-btn small-btn"><i class="fas fa-terminal"></i> CODE</a>
+                            <p class="project-desc">CNN and Xception deep learning models to classify anomalies from
+                                ultrasound images.</p>
+                            <a href="https://github.com/appu-ui" target="_blank"
+                                class="project-link brutal-btn small-btn"><i class="fas fa-terminal"></i> CODE</a>
                         </div>
                     </div>
                 </div>
@@ -145,25 +177,33 @@
                     <div class="skill-category brutal-card reveal">
                         <h3>LANGUAGES</h3>
                         <div class="skill-tags">
-                            <span class="brutal-tag">Python</span><span class="brutal-tag">C++</span><span class="brutal-tag">C</span><span class="brutal-tag">JavaScript</span><span class="brutal-tag">HTML</span><span class="brutal-tag">CSS</span><span class="brutal-tag">SQL</span>
+                            <span class="brutal-tag">Python</span><span class="brutal-tag">C++</span><span
+                                class="brutal-tag">C</span><span class="brutal-tag">JavaScript</span><span
+                                class="brutal-tag">HTML</span><span class="brutal-tag">CSS</span><span
+                                class="brutal-tag">SQL</span>
                         </div>
                     </div>
                     <div class="skill-category brutal-card reveal">
                         <h3>FRAMEWORKS</h3>
                         <div class="skill-tags">
-                            <span class="brutal-tag">Node.js</span><span class="brutal-tag">Flask</span><span class="brutal-tag">React</span><span class="brutal-tag">Next.js</span><span class="brutal-tag">MongoDB</span><span class="brutal-tag">TensorFlow</span>
+                            <span class="brutal-tag">Node.js</span><span class="brutal-tag">Flask</span><span
+                                class="brutal-tag">React</span><span class="brutal-tag">Next.js</span><span
+                                class="brutal-tag">MongoDB</span><span class="brutal-tag">TensorFlow</span>
                         </div>
                     </div>
                     <div class="skill-category brutal-card reveal">
                         <h3>TOOLS</h3>
                         <div class="skill-tags">
-                            <span class="brutal-tag">GitHub</span><span class="brutal-tag">Docker</span><span class="brutal-tag">AWS</span><span class="brutal-tag">Qdrant</span><span class="brutal-tag">Figma</span>
+                            <span class="brutal-tag">GitHub</span><span class="brutal-tag">Docker</span><span
+                                class="brutal-tag">AWS</span><span class="brutal-tag">Qdrant</span><span
+                                class="brutal-tag">Figma</span>
                         </div>
                     </div>
                     <div class="skill-category brutal-card reveal">
                         <h3>CORE</h3>
                         <div class="skill-tags">
-                            <span class="brutal-tag">OS</span><span class="brutal-tag">DBMS</span><span class="brutal-tag">DSA</span><span class="brutal-tag">Networks</span>
+                            <span class="brutal-tag">OS</span><span class="brutal-tag">DBMS</span><span
+                                class="brutal-tag">DSA</span><span class="brutal-tag">Networks</span>
                         </div>
                     </div>
                 </div>
@@ -200,13 +240,45 @@
 
         <section id="contact" class="contact section-padding">
             <div class="container">
-                <div class="contact-card brutal-card reveal">
-                    <h2 class="section-title">CONTACT</h2>
-                    <p style="font-family: var(--font-body); font-size: 1.1rem; margin-bottom: 2rem;">Input queries or collaboration proposals below.</p>
-                    <div class="contact-info">
-                        <p><i class="fas fa-envelope"></i> <a href="mailto:1MS22CI014@msrit.edu">1MS22CI014@msrit.edu</a></p>
-                        <p><i class="fas fa-phone"></i> +91 7337661476</p>
+                <h2 class="section-title">GET IN TOUCH</h2>
+                <div class="contact-wrapper brutal-scale-card reveal">
+                    <div class="contact-info-panel">
+                        <h3>LET'S TALK</h3>
+                        <p>Feel free to reach out for collaborations, job opportunities, or just a quick chat.</p>
+
+                        <div class="contact-line">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:1MS22CI014@msrit.edu">1MS22CI014@msrit.edu</a>
+                        </div>
+                        <div class="contact-line">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 7337661476</span>
+                        </div>
+                        <div class="contact-line">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Bengaluru, Karnataka</span>
+                        </div>
                     </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <!-- Web3Forms Access Key -->
+                        <input type="hidden" name="access_key" value="191067d1-4c70-4d0a-90d7-595abc1a4b2c">
+                        <input type="hidden" name="subject" value="New Submission from Portfolio Form">
+                        
+                        <div class="form-group">
+                            <label>YOUR NAME</label>
+                            <input type="text" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label>YOUR EMAIL</label>
+                            <input type="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>MESSAGE</label>
+                            <textarea name="message" placeholder="Type your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="brutal-btn secondary-btn" style="align-self: flex-start;">SEND MESSAGE</button>
+                    </form>
                 </div>
             </div>
         </section>
@@ -218,4 +290,5 @@
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
