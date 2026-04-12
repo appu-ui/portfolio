@@ -21,7 +21,7 @@ body {
     position: relative;
     /* Flytbase-like soft green dot grid */
     background-color: var(--bg-color);
-    background-image: radial-gradient(rgba(18, 130, 61, 0.24) 0.85px, transparent 0.95px);
+    background-image: radial-gradient(rgba(92, 140, 96, 0.46) 0.82px, transparent 0.92px);
     background-size: 10px 10px;
     background-attachment: fixed;
     overflow-x: hidden;
