@@ -19,18 +19,12 @@ html { scroll-behavior: smooth; background-color: var(--bg-color); color: var(--
 /* Subtle dot grid background */
 body {
     position: relative;
-    /* Tighter, slightly faded dot grid */
-    background-image: radial-gradient(rgba(60, 28, 17, 0.3) 1px, transparent 1px);
-    background-size: 12px 12px;
+    /* Flytbase-like soft green dot grid */
+    background-color: var(--bg-color);
+    background-image: radial-gradient(rgba(18, 130, 61, 0.24) 0.85px, transparent 0.95px);
+    background-size: 10px 10px;
     background-attachment: fixed;
     overflow-x: hidden;
-}
-body::before {
-    content: '';
-    position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-    background-color: var(--bg-color);
-    opacity: 0.95;
-    z-index: -1;
 }
 
 a, button { text-decoration: none; color: inherit; cursor: pointer; }
@@ -240,7 +234,6 @@ footer { text-align: center; padding: 2rem; border-top: 4px solid var(--border-c
 /* Responsive */
 @media (max-width: 768px) {
   body { background-attachment: scroll; }
-  body::before { display: none; }
   .section-padding { padding: 60px 5%; }
   .section-title {
     font-size: clamp(1.15rem, 6.2vw, 1.6rem);
