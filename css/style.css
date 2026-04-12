@@ -23,6 +23,7 @@ body {
     background-image: radial-gradient(rgba(60, 28, 17, 0.3) 1px, transparent 1px);
     background-size: 12px 12px;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 body::before {
     content: '';
@@ -238,17 +239,20 @@ footer { text-align: center; padding: 2rem; border-top: 4px solid var(--border-c
 
 /* Responsive */
 @media (max-width: 768px) {
+  body { background-attachment: scroll; }
+  body::before { display: none; }
   .section-padding { padding: 60px 5%; }
   .navbar { padding: 15px 5%; }
   .hero { min-height: auto; padding-top: 90px; }
   .hero-content { max-width: 100%; }
-  .title { font-size: clamp(1.5rem, 7vw, 2.1rem); line-height: 1.35; margin-bottom: 0; }
+  .title { font-size: clamp(1.35rem, 6.4vw, 1.9rem); line-height: 1.35; margin-bottom: 0; }
+  .title-intro { white-space: normal; }
   .typing-text { font-size: 1rem; }
   .description { font-size: 1rem; line-height: 1.6; }
   .brutal-badge { font-size: 0.55rem; padding: 8px 12px; margin-bottom: 1rem; }
   .cta-group { flex-direction: column; width: 100%; gap: 1rem; }
   .cta-group .brutal-btn { width: 100%; text-align: center; padding: 14px 12px; font-size: 0.65rem; }
-  .nav-links { position: fixed; top: 0; right: -100%; width: 300px; height: 100vh; background: var(--bg-color); border-left: 4px solid var(--border-color); box-shadow: -10px 0 0 0 rgba(0,0,0,0.1); flex-direction: column; justify-content: center; align-items: center; transition: 0.4s ease-in-out; gap: 3rem; }
+  .nav-links { position: fixed; top: 0; right: -110vw; width: min(85vw, 300px); height: 100vh; background: var(--bg-color); border-left: 4px solid var(--border-color); box-shadow: -10px 0 0 0 rgba(0,0,0,0.1); flex-direction: column; justify-content: center; align-items: center; transition: 0.4s ease-in-out; gap: 3rem; }
   .contact-wrapper { grid-template-columns: 1fr; gap: 2rem; }
   .contact-form { padding: 1.5rem; }
   .nav-links.active { right: 0; }
@@ -260,7 +264,6 @@ footer { text-align: center; padding: 2rem; border-top: 4px solid var(--border-c
 }
 
 @media (max-width: 480px) {
-  .title-intro { white-space: normal; }
   .title .highlight { display: inline-block; word-break: break-word; }
 }
 
