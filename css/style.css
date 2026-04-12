@@ -136,6 +136,7 @@ h1, h2, h3, h4 { font-family: var(--font-heading); text-transform: uppercase; li
 .hero { display: flex; align-items: flex-start; justify-content: space-between; gap: clamp(2rem, 4vw, 4rem); min-height: 100vh; padding-top: 100px; flex-wrap: nowrap; }
 .hero-content { display: flex; flex-direction: column; align-items: flex-start; gap: 1.5rem; flex: 1 1 60%; max-width: 700px; min-width: 0; }
 .title { font-size: 3rem; line-height: 1.5; margin-top: 0.5rem; margin-bottom: -15px;}
+.title-intro { white-space: nowrap; }
 .highlight { color: var(--secondary); text-shadow: 4px 4px 0px var(--border-color); }
 .typing-text { font-family: var(--font-body); font-size: 1.4rem; font-weight: 700; color: var(--accent-green); text-shadow: 1px 1px 0px var(--border-color); }
 .cursor { animation: blink 1s infinite; }
