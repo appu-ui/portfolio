@@ -242,6 +242,13 @@ footer { text-align: center; padding: 2rem; border-top: 4px solid var(--border-c
   body { background-attachment: scroll; }
   body::before { display: none; }
   .section-padding { padding: 60px 5%; }
+  .section-title {
+    font-size: clamp(1.15rem, 6.2vw, 1.6rem);
+    line-height: 1.4;
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
   .navbar { padding: 15px 5%; }
   .hero { min-height: auto; padding-top: 90px; }
   .hero-content { max-width: 100%; }
