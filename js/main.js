@@ -35,9 +35,9 @@ const observerOptions = {
 const scrollObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            let delay = 0;
-            if(entry.target.classList.contains('timeline-item')) delay = 0.15;
-            if(entry.target.classList.contains('project-card')) delay = 0.1;
+            let delay = Number(entry.target.dataset.revealDelay) || 0;
+            if (entry.target.classList.contains('timeline-item') && !entry.target.dataset.revealDelay) delay = 0.15;
+            if (entry.target.classList.contains('project-card') && !entry.target.dataset.revealDelay) delay = 0.1;
             entry.target.style.transitionDelay = `${delay}s`;
             entry.target.classList.add('active');
             
