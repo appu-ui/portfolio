@@ -7,8 +7,8 @@
   --border-color: #3C1C11; /* Deep Mahogany */
   --text-main: #3C1C11;
   --text-light: #5A3528;
-  --font-heading: 'Press Start 2P', cursive;
-  --font-body: 'JetBrains Mono', monospace;
+  --font-heading: 'Press Start 2P', 'Courier New', Courier, monospace;
+  --font-body: 'JetBrains Mono', 'Fira Code', 'IBM Plex Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
   --brutal-shadow: 6px 6px 0px 0px var(--border-color);
   --brutal-shadow-hover: 2px 2px 0px 0px var(--border-color);
 }
@@ -25,11 +25,16 @@ body {
     background-size: 10px 10px;
     background-attachment: fixed;
     overflow-x: hidden;
+    font-family: var(--font-body);
+    font-weight: 500;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
 
 a, button { text-decoration: none; color: inherit; cursor: pointer; }
 li { list-style: none; }
-h1, h2, h3, h4 { font-family: var(--font-heading); text-transform: uppercase; line-height: 1.4; }
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); text-transform: uppercase; line-height: 1.4; }
+p, li, span, small, label, input, textarea, button, a { font-family: var(--font-body); }
 
 /* Brutalist UI Components */
 .brutal-card {
@@ -120,8 +125,8 @@ h1, h2, h3, h4 { font-family: var(--font-heading); text-transform: uppercase; li
 .navbar { position: fixed; top: 0; width: 100%; padding: 20px 10%; display: flex; justify-content: space-between; align-items: center; background: var(--bg-color); border-bottom: 4px solid var(--border-color); z-index: 1000; transition: padding 0.3s ease; }
 .navbar.scrolled { padding: 15px 10%; box-shadow: 0 4px 0px 0px var(--border-color); }
 .logo { font-size: 1.5rem; font-family: var(--font-heading); color: var(--text-main); }
-.nav-links { display: flex; gap: 2.5rem; font-family: var(--font-body); font-weight: 700; }
-.nav-links a { font-size: 1.1rem; position: relative; color: var(--text-main); padding: 0.35rem 0.5rem; border: 2px solid transparent; transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease; }
+.nav-links { display: flex; gap: 2.5rem; font-family: var(--font-heading); font-weight: 400; }
+.nav-links a { font-size: 0.95rem; position: relative; color: var(--text-main); padding: 0.35rem 0.5rem; border: 2px solid transparent; transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease; }
 .nav-links a:hover, .nav-links a.active { color: var(--secondary); }
 .nav-links a.active {
     background: var(--tertiary);
@@ -143,6 +148,7 @@ h1, h2, h3, h4 { font-family: var(--font-heading); text-transform: uppercase; li
 .cursor { animation: blink 1s infinite; }
 @keyframes blink { 50% { opacity: 0; } }
 .description { font-size: 1.25rem; font-weight: 500; color: var(--text-light); line-height: 1.8; }
+.description, .project-desc, .exp-details li, .contact-info-panel p { font-family: var(--font-body); }
 
 /* Hero Graphic Composition */
 .hero-graphic { flex: 0 0 350px; display: flex; justify-content: flex-end; align-items: flex-start; max-width: 350px; margin-top: 0.5rem; }
