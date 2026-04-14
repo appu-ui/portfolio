@@ -34,7 +34,7 @@ body {
 a, button { text-decoration: none; color: inherit; cursor: pointer; }
 li { list-style: none; }
 h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); text-transform: uppercase; line-height: 1.4; }
-p, li, span, small, label, input, textarea, button, a { font-family: var(--font-body); }
+p, li, small, label, input, textarea, button { font-family: var(--font-body); }
 
 /* Brutalist UI Components */
 .brutal-card {
